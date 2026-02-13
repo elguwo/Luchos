@@ -1,0 +1,116 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.169);
+  background-image: url(Resources/alex-mesmer-6h6O17NjZ_I-unsplash.jpg);
+  background-position: center;
+  background-repeat:  no-repeat;
+  background-size: cover;
+  text-shadow: 0 0 0 90px red;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+button {
+  outline: 0;
+  border: 0;
+  color: 0;
+}
+#app {
+  gap: 2vh;
+  color: white;
+  padding: 4vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  padding: 4vh;
+  border-radius: 4vh;
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(255, 255, 255);
+  width: 10%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  margin: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  height: 5vh;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 3vh;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+    scale: 1.1;
+  background-color: rgba(255,255,255,0.1);
+  border-color: white;
+}
+i {
+    width: 1.6vh;
+    height: 1.6vh;
+}
+.note-section {
+  align-items: center;
+  border-radius: 3vh;
+  padding: 2vh;
+  height: 93.5vh;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.536);
+  border: 1px solid rgb(255, 255, 255);
+  width: 90%;
+}
+.btn-2 {
+    margin: 1vh;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  height: 5vh;
+  width: 10%;
+  background-color: transparent;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 3vh;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn-2:hover {
+    scale: 1.1;
+  background-color: rgba(255,255,255,0.1);
+  border-color: white;}
+  .note {
+    overflow: scroll;
+    padding: 3vh;
+    border-radius: 1.5vh;
+    border:  1px solid white;
+    background-color: rgba(255, 255, 255, 0.037);
+    height: 80vh;
+  }
+  [contenteditable="true"] {
+    outline: none;
+    letter-spacing: 1px;
+  }

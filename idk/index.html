@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concept-Note-notrealnotebtw</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAYl2T8RCHB7iRqmvPOoU6im0rA-Twbiu4",
+        authDomain: "concept-a4f32.firebaseapp.com",
+        projectId: "concept-a4f32",
+        storageBucket: "concept-a4f32.firebasestorage.app",
+        messagingSenderId: "275417951078",
+        appId: "1:275417951078:web:6c3f788970e7fe437636a7",
+        measurementId: "G-384CB49NB0",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="navbar">
+        <div class="Account-section">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+            <path
+              fill="rgba(255, 255, 255, 1.00)"
+              d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"
+            />
+          </svg>
+          <h1><span id="name">Lucho</span></h1>
+        </div>
+        <div class="btn"><i data-feather="file-text"></i>Notes</div>
+        <div class="btn"><i data-feather="check-square"></i>Tasks</div>
+        <div class="btn"><i data-feather="calendar"></i>Calendar</div>
+        <div class="btn"><i data-feather="folder"></i>Files</div>
+        <div class="btn"><i data-feather="settings"></i>Settings</div>
+      </div>
+      <div class="note-section">
+        <div class="btns">
+          <button class="btn-2">Add</button>
+          <button class="btn-2">Delete</button>
+        </div>
+        <div class="note">
+          <h1 contenteditable="true">Welcome Lucho</h1>
+          <p contenteditable="true">Escribe aqui...</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
